@@ -1,0 +1,364 @@
+{
+	"info": {
+		"_postman_id": "aa5eacc6-f58f-48a4-b3b4-b54a3af5f5ed",
+		"name": "system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30848829"
+	},
+	"item": [
+		{
+			"name": "/Admin/createStaff",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFETUlOIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzA1NzYwMTA0LCJleHAiOjE3MzcyOTYxMDR9.E4twmqAHKFHWRAFq3290p7sBG6vAjAttwn180shFte4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"karima\",\r\n    \"password\": \"23456\",\r\n    \"role\": \"staff\",\r\n    \"email\": \"karima@gmail.com\",\r\n    \"staff_id\": \"4444\"\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://attendancemanagementsystem.azurewebsites.net/Admin/createStaff",
+					"protocol": "https",
+					"host": [
+						"attendancemanagementsystem",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Admin",
+						"createStaff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/students/viewDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"student_id\": \"b022210019\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://attendancemanagementsystem.azurewebsites.net/students/viewDetailss",
+					"protocol": "https",
+					"host": [
+						"attendancemanagementsystem",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"students",
+						"viewDetailss"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/Staff/Students/RecordAttendance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Inl1eXUiLCJyb2xlIjoic3RhZmYiLCJpYXQiOjE3MDU3ODAxNzUsImV4cCI6MTczNzMxNjE3NX0.8ODwEq-3Kuvchpxx_zXxeerexq4m9DKopKcw2woVta8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"student_id\": \"B022210011\",\r\n      \"date\": \"17/1/2024\",\r\n      \"status\": \"late\",\r\n      \"time\": \"9.31am\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://attendancemanagementsystem.azurewebsites.net/Staff/Students/RecordAttendance",
+					"protocol": "https",
+					"host": [
+						"attendancemanagementsystem",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Staff",
+						"Students",
+						"RecordAttendance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"ADMIN\",\r\n    \"password\":\"ADMIN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://attendancemanagementsystem.azurewebsites.net/login",
+					"protocol": "https",
+					"host": [
+						"attendancemanagementsystem",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/Admin/createStudent",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"username\":\"mia\",\r\n    \"password\":\"mia\",\r\n    \"role\":\"student\",\r\n    \"student_id\":\"b022210019\",\r\n    \"email\":\"mia@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://attendancemanagementsystem.azurewebsites.net/Admin/createStudent",
+					"protocol": "https",
+					"host": [
+						"attendancemanagementsystem",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Admin",
+						"createStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/Admin/staff/viewDetails",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFETUlOIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzA2MjczODQwLCJleHAiOjE3Mzc4MDk4NDB9.5yiu1p49KJkfXuv2maap-tcHJ8DcZwZt2kFm9WQF6qw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"staff_id\":\"4434\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://attendancemanagementsystem.azurewebsites.net/Admin/staff/viewDetails",
+					"protocol": "https",
+					"host": [
+						"attendancemanagementsystem",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Admin",
+						"staff",
+						"viewDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/Admin/createFaculty",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFETUlOIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzA1Nzc2ODIxLCJleHAiOjE3MzczMTI4MjF9.iq__RflSi5memS7gu_e4nn1GmW5ezs1L-UdsOOzYYDI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"ftkek\",\r\n     \"code\":\"2425\",\r\n     \"programs\":\"berr\",\r\n     \"students\":\"B022210082\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://attendancemanagementsystem.azurewebsites.net/Admin/createFaculty",
+					"protocol": "https",
+					"host": [
+						"attendancemanagementsystem",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Admin",
+						"createFaculty"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/Admin/createPrograms",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"blpg\",\r\n    \"code\":\"5432\",\r\n    \"faculty\":\"fke\",\r\n    \"subject\":\"english\",\r\n    \"students\":\"b022210087\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://attendancemanagementsystem.azurewebsites.net/Admin/createPrograms",
+					"protocol": "https",
+					"host": [
+						"attendancemanagementsystem",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Admin",
+						"createPrograms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/Admin/create-subject",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\":\"fundamental\",\r\n  \"code\":\"5432\",\r\n  \"faculty\":\"ftmk\",\r\n  \"program\":\"begg\",\r\n  \"credit\":\"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://attendancemanagementsystem.azurewebsites.net/Admin/create-subject",
+					"protocol": "https",
+					"host": [
+						"attendancemanagementsystem",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Admin",
+						"create-subject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/Admin/viewStudentList",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFETUlOIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzA2MjczODQwLCJleHAiOjE3Mzc4MDk4NDB9.5yiu1p49KJkfXuv2maap-tcHJ8DcZwZt2kFm9WQF6qw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://attendancemanagementsystem.azurewebsites.net/Admin/viewStudentList",
+					"protocol": "https",
+					"host": [
+						"attendancemanagementsystem",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Admin",
+						"viewStudentList"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
