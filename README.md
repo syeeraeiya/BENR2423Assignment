@@ -1,2 +1,2 @@
-# BENR2423Assignment
+# Attendance System
 assignment group ARIBAH, SHAHIRA, SYAHEERA, ALISSYA
